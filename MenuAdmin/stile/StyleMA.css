@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    line-height: 20px;
+    text-align: center;
+    background-color : #2C3E50;
+	background-image : url("../immagini/BackgroundAdmin.jpg");
+	background-size: 120%;
+	
+}
+
+strong { 
+		 font-weight: 500;
+		 color: #2C3E50;
+		 font-family: Lato;
+		 font-size: 53px;
+	   }
+
+h1, h2 {
+	margin: 40px;
+	font-size: 38px;
+    font-weight: 100;
+    color: #fff;
+    line-height: 50px;
+}
+
+::-moz-selection { 
+    //background: #2C3E50; 
+    color: #fff; 
+    text-shadow: none; }
+::selection { background: #6494FA; color: #fff; text-shadow: none; }
+
+button.btn {
+	height: 50px;
+    margin: 10;
+    padding: 0 20px;
+	width:23%;
+    vertical-align: middle;
+    background: #2C3E50;
+    border: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}	
+
+button.btn:hover { opacity: 0.8; color: #fff; }
+
+button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+button.btn:focus { outline: 0; opacity: 0.6; background: #6494FA; color: #fff; }
+
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #6494FA; color: #fff; }
