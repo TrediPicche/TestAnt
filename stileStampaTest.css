@@ -1,0 +1,131 @@
+body{
+	font-family: 'Montserrat';
+	background:#696969;
+}
+
+#corpo{
+	background: white;
+	border-radius:15px;
+	box-shadow: 2px 2px 5px 1px black;
+}
+
+.riga{
+	padding-top:10px;
+	padding-bottom:10px;
+	background: cream;
+	box-shadow: 2px 2px 5px 1px gray;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.title{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 60px;
+	text-shadow: 3px 3px 5px lightgray;
+	color: #2C3E50;
+}
+
+.question{
+	text-align: center;	
+	font-size: 30px;
+	color: darkblue;
+	font-style: bold;
+	
+}
+
+#countdown{
+	bottom: 1%;
+	right: 18px;
+	z-index: 1;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0px;
+	position: fixed;
+	width: 120px; 
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: #393;
+	text-shadow: 2px 2px 4px #000000;
+	box-shadow: 2px 2px 5px 1px grey;
+}
+
+/* The container */
+.answer {
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.answer:hover{
+	color: gray;
+}
+
+.answer input {
+  position: absolute;
+  left: 20;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* Style the indicator (dot/circle) */
+.answer .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.confirm{
+  align-items: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-bottom:30px;
+}
+
+.confirm:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.confirm:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.confirm:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}

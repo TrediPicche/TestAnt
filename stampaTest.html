@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	
+		<title>Questionario</title>
+		
+		<link rel="stylesheet" href="stile/stileStampaTest.css">
+		
+		<!-- <script src="js/functionJsStampaTest.js"></script> -->
+		
+	</head>
+	
+	<body>
+	
+		<p id="countdown">2:00:00</p>
+		
+		<div id="corpo">
+	
+			<h1 class="title"> Test di Logica </h1>
+						
+			<div class="riga">
+				<div id="quest<% contatore %>" class="question"> Domanda <%= contatore+1 %> </div><br>
+			
+				<label class="answer">
+					<input name="risposta<% contatore %>" type="radio" required > 
+					<span class="checkmark">Rispostina 1</span>
+				</label>
+				
+				<label class="answer">
+					<input name="risposta<% contatore %>" type="radio" required > 
+					<span class="checkmark">Rispostina 2</span>
+				</label>
+				
+				<label class="answer">
+					<input name="risposta<% contatore %>" type="radio" required > 
+					<span class="checkmark">Rispostina 3</span>
+				</label>
+				
+				<label class="answer">
+					<input name="risposta<% contatore %>" type="radio" required > 
+					<span class="checkmark">Rispostina 4</span>
+				</label>
+			
+			</div><br>
+			
+			<div class="riga">
+				<div id="quest2" class="question"> Domanda 2 </div><br>
+			
+				<label class="answer">
+					<input type="radio" name="risposta2" required > 
+					<span class="checkmark">Rispostina a</span>
+				</label>
+				
+				<label class="answer">
+					<input type="radio" name="risposta2" required > 
+					<span class="checkmark">Rispostina b</span>
+				</label>
+				<label class="answer">
+					<input type="radio" name="risposta2" required > 
+					<span class="checkmark">Rispostina c</span>
+				</label>
+				<label class="answer">
+					<input name="risposta2" type="radio"  required >
+					<span class="checkmark"> Rispostina d</span>
+				</label>
+			
+			</div><br>
+			
+			<div class="riga">
+				<div id="quest2" class="question"> Domanda 3 </div><br>
+			
+				<label class="answer">
+					<input type="radio" name="risposta3" required > 
+					<span class="checkmark">Rispostina w</span>
+				</label>
+				
+				<label class="answer">
+					<input type="radio" name="risposta3" required > 
+					<span class="checkmark">Rispostina x</span>
+				</label>
+				<label class="answer">
+					<input type="radio" name="risposta3" required > 
+					<span class="checkmark">Rispostina y</span>
+				</label>
+				<label class="answer">
+					<input type="radio" name="risposta3" required >
+					<span class="checkmark">Rispostina z</span>
+				</label>
+			
+			</div><br>
+			
+			<div class="question"> 
+				<input class="confirm" onclick="checkQuest()" value="Concludi Test" type="button">  
+					<!-- mettere if checkQuest() vero <% andare alla selezione test %> -->
+			</div>
+					
+		</div>
+								
+	</body>
+	
+	<script src="js/functionJsStampaTest.js"></script>
+	
+</html>
