@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<title>Selezione test</title>
+
+		<link rel="stylesheet" href="stile/bootstrap.min.css">
+		<link rel="stylesheet" href="stile/stileIndex.css">
+		<script></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text">
+					<h1><strong>Seleziona il test</strong></h1>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<form role="form" method="post" class="test1-form" name="form1">
+								<div class="btn-group" role="group">
+									<input type="button" class="btn btn-success" name = "1" onClick="document.location.href='/stampaTest?tipologia=1'" id = "logica"><span class="btn">Test Logica</span>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<input type="button" class="btn btn-success" name = "2" onClick="document.location.href='/stampaTest?tipologia=2'" id = "logica"><span class="btn">Test Java</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<input type="button" class="btn btn-success" name = "3" onClick="document.location.href='/stampaTest?tipologia=3'" id = "logica"><span class="btn">Test Java Avanzato</span>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+			<div class="row rg">
+				<div class="col-sm-4">
+				</div>
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-info" onClick="document.location.href='index.html'" id = "esci"><span class="btn">Esci</span></button>
+							</div>
+						</div>
+					</div>
+					
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</div>
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+	</body>
+</html>
