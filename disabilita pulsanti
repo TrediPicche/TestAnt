@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<title>Selezione test</title>
+
+		<link rel="stylesheet" href="stile/bootstrap.min.css">
+		<link rel="stylesheet" href="stile/stileIndex.css">
+
+	</head>
+	
+    <!-- LANCIA LA FUNZIONE QUANDO LA PAGINA è CARICATA-->
+	<body onload="javascript:sbloccaTest()">
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text">
+					<h1><strong>Seleziona il test</strong></h1>
+				</div>
+			</div>
+
+			<div class="row">
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						
+							<form class="btn-group" role="form">
+								<button type="button" class="btn btn-success" name = "1" onClick="document.location.href='/stampaTest?tipologia=1'" id = "logica"><span class="btn">Test Logica</span></button>
+							</form>
+							
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							
+							<form class="btn-group" role="form">
+								<button type="button" class="btn btn-warning" name = "2" onClick="document.location.href='/stampaTest?tipologia=2'" id = "jBase"><span class="btn">Test Java Base</span></button>
+							</form>
+							
+						</div>
+					</div>
+					
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							
+							<form class="btn-group" role="form">
+								<button type="button" class="btn btn-danger" name="3" onClick="scriviCiao()"; id = "jPro"><span class="btn">Test Java Avanzato</span></button>
+							</form>
+							
+						</div>
+					</div>
+			</div>
+			
+			<div class="row rg">
+				<div class="col-sm-4">
+				</div>
+					<div class="col-sm-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-info" onClick="document.location.href='index.html'" id = "esci"><span class="btn">Esci</span></button>
+								<!--<button type="button" class="btn btn-info" onClick="sbloccaTest();" id = "prova"><span class="btn">abilita/disabilita</span></button>
+								-->
+							</div>
+						</div>
+					</div>
+					
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</div>
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+
+	</body>
+</html>
+
+<script>
+	const button1 = document.querySelector('#jBase');
+	const button2 = document.querySelector('#jPro');
+	
+	//dati da prendere dal db: id, tipo utente, testCompletato.
+	var id = 10;
+	var utente = "studente";
+	var completato = 1; //0/1
+	
+	
+	button1.disabled = true;
+	button2.disabled = true;
+	
+	function sbloccaTest(){
+		//se hai un certo id hai i test sbloccati
+		switch(id){
+			case 10:
+				button1.disabled = false;
+				button2.disabled = false;
+				console.log("sono nel caso id = 10");
+			break;
+		}
+		//se hai già fatto il test è cmq bloccato
+		if(completato == 1){
+			button1.disabled = true;
+			button2.disabled = true;
+			console.log("test già fatto");
+		}
+		
+		//se sei admin hai i test sbloccati a prescindere
+		if(utente == "admin") {
+			button1.disabled = false;
+			button2.disabled = false;
+			console.log("sono un admin, faccio quello che voglio");
+		}
+	}
+	
+function scriviCiao(){
+	console.log("ciao");
+}
+
+</script>
